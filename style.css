@@ -3,10 +3,24 @@ body {
   text-align: center;
 }
 
+h3 {
+  margin-bottom: 4px;
+  margin-top: 4px;
+  transition: all 1s;
+}
+
+input {
+  margin-bottom: 4px;
+}
+
 li {
   margin: 0 auto 4px;
   max-width: 350px;
   text-align: left;
+}
+
+.control-container {
+  padding: 8px;
 }
 
 .section {
@@ -15,5 +29,21 @@ li {
 }
 
 #comparo {
+  display: grid;
+  grid-template-areas:
+    'controls info';
+  margin-top: 32px;
   text-align: left;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  grid-area: controls;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  grid-area: info;
 }
