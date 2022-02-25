@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+li {
+  margin: 0 auto 4px;
+  max-width: 350px;
+  text-align: left;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#comparo {
+  text-align: left;
+}
