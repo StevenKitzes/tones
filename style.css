@@ -28,6 +28,11 @@ li {
   max-width: 960px;
 }
 
+.tiny {
+  font-size: 11px;
+  margin: 0;
+}
+
 #comparo {
   display: grid;
   grid-template-areas:
@@ -49,6 +54,7 @@ li {
 
 #image-container {
   grid-area: image;
+  text-align: center;
 }
 
 #info {

@@ -109,7 +109,13 @@ function update() {
 
   audio.setAttribute('src', audioFile);
   audio.play();
-  imageContainer.innerHTML = `<img id='guitar-image' src='${imageFile}' />`
+  imageContainer.innerHTML =
+    `
+      <a target='_blank' href='${imageFile}'>
+        <img id='guitar-image' src='${imageFile}' />
+      </a>
+      <p class='tiny'>(click to embiggen)</p>
+    `
 
   updateText(guitar.value);
 }
