@@ -31,7 +31,8 @@ li {
 #comparo {
   display: grid;
   grid-template-areas:
-    'controls info';
+    'controls image info';
+  grid-template-columns: 200px 150px 1fr;
   margin-top: 32px;
   text-align: left;
 }
@@ -40,6 +41,14 @@ li {
   display: flex;
   flex-direction: column;
   grid-area: controls;
+}
+
+#guitar-image {
+  height: 250px;
+}
+
+#image-container {
+  grid-area: image;
 }
 
 #info {
