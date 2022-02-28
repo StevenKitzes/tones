@@ -1,11 +1,22 @@
+a {
+  color: brown;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 body {
+  background-image: linear-gradient(#fcdb9f, #f9e4bb);
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
   text-align: center;
 }
 
-h3 {
+h2, h3 {
+  border-radius: 16px;
   margin-bottom: 4px;
-  margin-top: 4px;
+  margin: 8px 0;
+  padding: 8px;
+  text-align: center;
   transition: all 1s;
 }
 
@@ -17,6 +28,14 @@ li {
   margin: 0 auto 4px;
   max-width: 350px;
   text-align: left;
+}
+
+svg {
+  color: brown;
+}
+
+.burst {
+  background-image: radial-gradient(orange, orange, brown, black, black);
 }
 
 .control-container {
@@ -48,6 +67,13 @@ li {
   grid-area: controls;
 }
 
+#github {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 #guitar-image {
   height: 250px;
 }
@@ -61,4 +87,11 @@ li {
   display: flex;
   flex-direction: column;
   grid-area: info;
+}
+
+#page-title {
+  width: 200px;
+  margin: 20px auto;
+  padding: 12px;
+  border-radius: 24px;
 }
